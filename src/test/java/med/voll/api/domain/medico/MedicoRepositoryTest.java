@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager;
+import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.context.ActiveProfiles;
 
 import java.time.DayOfWeek;
@@ -32,6 +33,7 @@ class MedicoRepositoryTest {
 
     @Test
     @DisplayName("Deveria devolver null quando unico medico cadastrado nao esta disponivel na data")
+    @WithMockUser
     void escolherMedicoAleatorioLivreNaDataCenario1() {
         //given ou arrange
         var proximaSegundaAs10 = LocalDate.now()
@@ -50,6 +52,7 @@ class MedicoRepositoryTest {
 
     @Test
     @DisplayName("Deveria devolver medico quando ele estiver disponivel na data")
+    @WithMockUser
     void escolherMedicoAleatorioLivreNaDataCenario2() {
         //given ou arrange
         var proximaSegundaAs10 = LocalDate.now()
