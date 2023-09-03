@@ -2,7 +2,7 @@
 
 VollMed API REST foi um projeto desenvolvido durante o curso de Java e Spring Boot da Alura.
 
-##Sobre o projeto:
+##  Sobre o projeto
 A API REST foi construída do zero com Spring Boot na versão 3.0.10, utilizando a linguagem Java na versão 17 e o Maven como gerenciador de dependências.
 
 ##Ferramentas utilizadas:
@@ -11,8 +11,8 @@ Hibernate como Object Relational Mapping (ORM) para conexão com o banco de dado
 Spring Doc e Swagger para documentação automatizada da API;
 JUnit e Mockito para realização de testes unitários em vários cenários;
 
-##Banco de dados:
+##  Banco de dados:
 A aplicação foi desenvolvida e testada com o banco de dados Mysql, mas é totalmente compatível com outro bancos de dados relacionais.
 
-##Refências:
+##  Refências:
 https://spring.io/
